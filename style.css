@@ -1274,7 +1274,7 @@ textarea.form-control{
     position:relative;
     height:60vh;
 
-    background:url('images/health-insurance.jpg')
+    background:url('health-insurance.jpg')
     center center / cover no-repeat;
 
     background-attachment: fixed; /* 🔥 Important */
@@ -1415,7 +1415,7 @@ h1 span{
     width: 100%;
   
   background: linear-gradient(rgba(6,19,38,0.9), rgba(10,31,56,0.95)),
-              url("images/health-insurance.jpg") no-repeat center;
+              url("health-insurance.jpg") no-repeat center;
   background-size: cover;
   padding-top: 50px;
   position: relative;
@@ -1691,4 +1691,5 @@ h1 span{
   }
 
 }
+
 
