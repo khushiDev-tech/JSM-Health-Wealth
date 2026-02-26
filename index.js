@@ -3,19 +3,19 @@ const slides = [
     title: 'Secure Your Financial Future with <span>JSM</span>',
     subtitle: 'Your trusted partner in wealth, health, and insurance solutions',
     desc: 'Personalized solutions that help you achieve your goals',
-    image: 'images/health-insurance.jpg'
+    image: 'health-insurance.jpg'
   },
   {
     title: 'Your trusted partner in wealth, health, and ',
     subtitle: 'Complete life, health, and vehicle insurance plans',
     desc: 'Smart protection for you and your family',
-    image: 'images/slide-1.avif'
+    image: 'slide-1.avif'
   },
   {
     title: 'Personalized Solutions which helps you achieve your <span>Goals</span>',
     subtitle: 'Investment planning made simple and secure',
     desc: 'Build a strong financial future with expert guidance',
-    image: 'images/slide-2.avif'
+    image: 'slide-2.avif'
   }
 ];
 
@@ -63,5 +63,6 @@ const navLinks = document.getElementById("navLinks");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
 
 
