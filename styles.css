@@ -547,7 +547,7 @@ body {
 
  .sip-section-2 {
    background: linear-gradient(rgba(22, 22, 23, 0.6), rgba(10, 25, 60, 0.6)),
-                url("images/contact.jpg") center/cover no-repeat fixed;
+                url("contact.jpg") center/cover no-repeat fixed;
    
     padding: 60px 20px;
     display: flex;
@@ -1461,7 +1461,7 @@ background: #ffffff;
 
 .ulip-cta-unique {
     position: relative;
-    background: url('images/health-insurance.jpg') center center / cover no-repeat;
+    background: url('health-insurance.jpg') center center / cover no-repeat;
     padding: 60px 20px;
     color: #fff;
     text-align: center;
@@ -1543,5 +1543,6 @@ background: #ffffff;
     .cta-card p {
         font-size: 16px;
     }
+
 
 }
