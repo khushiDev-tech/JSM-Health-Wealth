@@ -547,7 +547,7 @@ body {
 
  .sip-section-2 {
    background: linear-gradient(rgba(22, 22, 23, 0.6), rgba(10, 25, 60, 0.6)),
-                url("contact.jpg") center/cover no-repeat fixed;
+                url("images/contact.jpg") center/cover no-repeat fixed;
    
     padding: 60px 20px;
     display: flex;
@@ -861,47 +861,6 @@ body {
     font-size:16px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-/* Tablets */
-@media (max-width: 992px){
-    .main-headings{
-        font-size: 34px;
-    }
-
-    .disclaimer-container{
-        padding: 50px 20px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px){
-    .main-headings{
-        font-size: 28px;
-    }
-
-    .disclaimer-container{
-        padding: 40px 15px;
-    }
-
-    .disclaimer-box{
-        font-size: 13px;
-        padding: 12px 15px;
-    }
-}
-
-/* Small Mobile */
-@media (max-width: 480px){
-    .main-headings{
-        font-size: 22px;
-    }
-
-    .disclaimer-box{
-        font-size: 12px;
-    }
-}
 /* Who Should Invest */
 
      .who-invest-section{
@@ -1003,70 +962,100 @@ body {
     }
 }
 
-  /* plain section */
-    .plan-section{
-        font-family: "Open Sans", sans-serif;
+/* =========================
+   PLAN SECTION
+========================= */
+
+.plan-section{
+    font-family: "Open Sans", sans-serif;
     padding:80px 0;
     background: linear-gradient(135deg, #f6fbf9, #eef8f5, #e6f4f0);
-  }
+}
 
-  .section-title{
+.section-title{
     font-size:36px;
     font-weight:700;
     color:#0b1f2a;
-  }
+    text-align:center;
+    margin-bottom:60px;
+}
 
-  .plan-card{
+/* =========================
+   PLAN CARD
+========================= */
+
+.plan-card{
+    
     background:#fff;
     border-radius:20px;
     padding:35px 30px;
     box-shadow:0 10px 30px rgba(0,0,0,0.06);
     transition:0.3s ease;
     height:100%;
-  }
+    text-align:center;   /* Center all content */
+}
 
-  .plan-card:hover{
+.plan-card:hover{
     transform:translateY(-8px);
     box-shadow:0 15px 35px rgba(0,0,0,0.1);
-  }
+}
 
-  .plan-icon{
+/* =========================
+   ICON ALIGNMENT FIX
+========================= */
+
+.plan-icon{
     font-size:42px;
     margin-bottom:20px;
-  }
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
-  .wealth-icon{ color:#0d6efd; }
-  .future-icon{ color:#174c3c; }
-  .family-icon{ color:#e11d48; }
+/* Icon Colors */
+.wealth-icon{ color:#0d6efd; }
+.future-icon{ color:#174c3c; }
+.family-icon{ color:#e11d48; }
 
-  .plan-title{
+/* =========================
+   TEXT STYLING
+========================= */
+
+.plan-title{
     font-size:24px;
     font-weight:700;
     margin-bottom:20px;
-  }
+}
 
-  .plan-card ul{
+.plan-card ul{
     list-style:none;
-    padding-left:0;
-  }
+    padding:0;
+    margin:0 auto;
+    display:inline-block;   /* important */
+    text-align:left;        /* keep icon + text aligned */
+}
 
-  .plan-card ul li{
-    text-align: center;
+.plan-card ul li{
+    display:flex;
+    align-items:center;
+    gap:10px;
     margin-bottom:12px;
     font-size:16px;
-  }
+}
 
-  .check{
+/* Check Icon */
+.check{
     color:#174c3c;
-    margin-right:8px;
-  }
+    margin-right:0;  /* remove extra margin */
+}
 
-  .highlight{
+/* Highlight Text */
+.highlight{
     font-weight:600;
     color:#e11d48;
-  }
+}
 
-  /* =========================
+/* =========================
    RESPONSIVE DESIGN
 ========================= */
 
@@ -1139,12 +1128,10 @@ body {
 /* ===========================
    SECTION BACKGROUND
 =========================== */
+
 .compare-section{
-         font-family: "Open Sans", sans-serif;
-    /* padding:80px 0;
-    background: linear-gradient(135deg, #f6fbf9, #eef8f5, #e6f4f0); */
-    padding:50px 0;
-    /* background:linear-gradient(135deg,#dff1f8,#f3f7fb); */
+    font-family: "Open Sans", sans-serif;
+    padding:60px 15px;
 }
 
 /* HEADING */
@@ -1152,80 +1139,174 @@ body {
     text-align:center;
     font-size:35px;
     font-weight:600;
-    margin-bottom:30px;
+    margin-bottom:40px;
     color:#174c3c;
 }
 
-/* TABLE WRAPPER */
+/* ===========================
+   TABLE WRAPPER
+=========================== */
+
 .compare-wrapper{
+    width:100%;
     border-radius:15px;
-    overflow:hidden;
-    box-shadow: 0 12px 35px rgba(0,0,0,0.20);
+    overflow:hidden; /* remove forced scroll */
+    box-shadow:0 12px 35px rgba(0,0,0,0.15);
+    background:#fff;
+}
+
+/* ===========================
+   TABLE STRUCTURE
+=========================== */
+
+.compare-table{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;   /* 🔥 makes table fit screen */
 }
 
 /* HEADER */
 .compare-table thead{
     background:#4f79a7;
     color:#fff;
-    font-size:22px;
     text-align:center;
 }
 
 .compare-table thead th{
     padding:18px;
+    font-size:20px;
     font-weight:600;
 }
 
 /* BODY */
-.compare-table tbody td{
-    padding:18px;
-    font-size:18px;
-    vertical-align:middle;
-}
-
 .compare-table tbody tr{
     background:#e9edf3;
     border-bottom:1px solid #d0d7e2;
+    transition:0.3s ease;
+}
+
+.compare-table tbody tr:hover{
+    background:#dde5f1;
+}
+
+.compare-table tbody td{
+    padding:16px;
+    font-size:16px;
+    vertical-align:middle;
+    text-align:center;
+    word-wrap:break-word;
 }
 
 /* Left column bold */
 .compare-table tbody td:first-child{
     font-weight:600;
-    width:25%;
+    text-align:left;
+    width:28%;
 }
 
-/* Premium formatting */
-.premium-list{
-    line-height:1.8;
+/* Highlight Boxes */
+.sa-wealth,
+.sa-future{
+    padding:8px;
+    margin-bottom:6px;
+    font-weight:600;
+    border-radius:6px;
 }
 
-/* SA Multiple Highlight Boxes */
 .sa-wealth{
     background:#f4b9bd;
-    padding:10px;
-    margin-bottom:5px;
-    font-weight:600;
 }
 
 .sa-future{
     background:#9ec3df;
-    padding:10px;
-    margin-bottom:5px;
-    font-weight:600;
 }
 
-/* Responsive */
-@media(max-width:768px){
+/* ===========================
+   TABLET (771px range FIX)
+=========================== */
 
-    .compare-table thead{
-        font-size:16px;
+@media (max-width:992px){
+
+    .compare-heading{
+        font-size:26px;
+    }
+
+    .compare-table thead th{
+        font-size:15px;
+        padding:12px;
     }
 
     .compare-table tbody td{
         font-size:14px;
         padding:12px;
     }
+}
 
+/* ===========================
+   MOBILE (Card Layout)
+=========================== */
+
+@media (max-width:768px){
+
+    .compare-table thead{
+        display:none;
+    }
+
+    .compare-table,
+    .compare-table tbody,
+    .compare-table tr,
+    .compare-table td{
+        display:block;
+        width:100%;
+    }
+
+    .compare-table tr{
+        margin-bottom:20px;
+        background:#f5f7fb;
+        border-radius:12px;
+        padding:12px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .compare-table tbody td{
+        text-align:left;
+        padding:10px;
+        font-size:14px;
+        border:none;
+    }
+
+    .compare-table tbody td:first-child{
+        font-weight:700;
+        margin-bottom:8px;
+    }
+
+    .compare-table td::before{
+        content: attr(data-label);
+        font-weight:600;
+        display:block;
+        margin-bottom:4px;
+        color:#174c3c;
+        font-size:13px;
+    }
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media(max-width:480px){
+
+    .compare-section{
+        padding:40px 10px;
+    }
+
+    .compare-heading{
+        font-size:22px;
+    }
+
+    .compare-table tbody td{
+        font-size:13px;
+    }
 }
 
 /* =========================
@@ -1319,9 +1400,12 @@ background: #ffffff;
 /* =========================
    CONTENT SECTION DESIGN
 ========================= */
+/* #features {
+  scroll-margin-top: 90px;
+} */
 
 .content-section {
-    padding: 40px 0;
+    padding: 30px 0;
 }
 
 .content-section:nth-child(even) {
@@ -1331,18 +1415,20 @@ background: #ffffff;
 .content-box {
     max-width: 850px;
     margin: auto;
-    text-align: center;
     background: #ffffff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+    text-align: left;   /* 🔥 important fix */
 }
 
+/* Heading center */
 .content-section h2 {
     font-size: 34px;
     font-weight: 600;
-    /* margin-bottom: 25px; */
     color: #111;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .content-section h5 {
@@ -1350,15 +1436,17 @@ background: #ffffff;
     margin-top: 25px;
 }
 
+/* Paragraph left aligned */
 .content-section p {
     font-size: 17px;
     line-height: 1.8;
     color: #555;
 }
 
+/* List styling */
 .content-section ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
     margin-top: 15px;
 }
 
@@ -1368,6 +1456,7 @@ background: #ffffff;
     color: #555;
 }
 
+/* Divider center */
 .divider {
     width: 60px;
     height: 3px;
@@ -1375,7 +1464,6 @@ background: #ffffff;
     margin: 15px auto 30px;
     border-radius: 3px;
 }
-
 
 /* =========================
    RESPONSIVE DESIGN
@@ -1455,13 +1543,21 @@ background: #ffffff;
     }
 }
 
+html {
+    scroll-padding-top: 100px;   /* adjust if navbar height different */
+}
+
+.content-section {
+    scroll-margin-top: 100px;   /* ensures heading visible after click */
+}
+
 /* =========================
         UNIQUE CTA SECTION
 ========================= */
 
 .ulip-cta-unique {
     position: relative;
-    background: url('health-insurance.jpg') center center / cover no-repeat;
+    background: url('images/health-insurance.jpg') center center / cover no-repeat;
     padding: 60px 20px;
     color: #fff;
     text-align: center;
@@ -1543,6 +1639,5 @@ background: #ffffff;
     .cta-card p {
         font-size: 16px;
     }
-
 
 }
