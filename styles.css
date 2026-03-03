@@ -1557,7 +1557,7 @@ html {
 
 .ulip-cta-unique {
     position: relative;
-    background: url('images/health-insurance.jpg') center center / cover no-repeat;
+    background: url('health-insurance.jpg') center center / cover no-repeat;
     padding: 60px 20px;
     color: #fff;
     text-align: center;
@@ -1642,3 +1642,4 @@ html {
 
 
 }
+
