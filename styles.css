@@ -172,7 +172,7 @@ body {
 ========================= */
 .about-plan-section{
      font-family: "Open Sans", sans-serif;
-    padding:50px 0;
+    padding:30px 0;
     background: linear-gradient(135deg, #f7fcfa, #eef9f6);
 }
 
@@ -221,11 +221,14 @@ body {
     text-align:center;
 }
 
+
 .plan-image-wrapper img{
-    max-width:100%;
-    height:auto;
+    width: 100%;
+    max-height: 350px;   /* 🔥 height kam kar di */
+    object-fit: contain; /* image cut nahi hogi */
+    display: block;
     border-radius:20px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+     box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
 /* =========================
@@ -552,7 +555,7 @@ body {
     padding: 60px 20px;
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     
   }
 
@@ -871,6 +874,7 @@ body {
   }
 
   .who-invest-title{
+    margin-bottom: 1rem;
     font-size: 36px;
     font-weight: 700;
     color: #0b1f2a;
@@ -1200,7 +1204,7 @@ body {
 /* Left column bold */
 .compare-table tbody td:first-child{
     font-weight:600;
-    text-align:left;
+    text-align:center;
     width:28%;
 }
 
@@ -1318,56 +1322,78 @@ body {
 /* =========================
    NAVIGATION
 ========================= */
+/* =========================
+   NAVIGATION
+========================= */
+
 .ulip {
+   
     font-family: "Open Sans", sans-serif;
     position: relative;
 }
 
 .ulip-nav-section {
     position: sticky;
-    top: 90px; /* change according to your main header height */
+    top: 90px;
     z-index: 998;
-background: #ffffff;
+    background: #ffffff;
     box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
-
 
 .ulip-nav-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 15px 0;
     position: relative;
+    overflow: hidden; /* important */
+    padding: 15px 0;
 }
 
-/* Center Links */
+/* Links Container */
 .ulip-links {
     display: flex;
     gap: 30px;
-    justify-content: center;
     white-space: nowrap;
+    overflow-x: auto;   /* 🔥 allow scroll */
+    scroll-behavior: smooth;
+    flex: 1;
 }
 
+/* Hide Scrollbar */
+.ulip-links::-webkit-scrollbar {
+    display: none;
+}
+.ulip-links {
+    scrollbar-width: none;
+}
+
+/* Each link fixed width so 6 visible */
 .ulip-links a {
+    flex: 0 0 auto;
     text-decoration: none;
     color: #111;
     font-weight: 500;
     font-size: 18px;
+    min-width: 200px;   /* 🔥 adjust to control 6 visible */
+    text-align: center;
     transition: 0.3s;
 }
 
 .ulip-links a:hover {
     color: #174c3c;
-
 }
 
-/* Arrows hidden desktop */
+/* Arrows */
 .nav-arrow {
-    display: none;
-    font-size: 18px;
+    font-size: 22px;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 8px 15px;
     color: #333;
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+
+.nav-arrow:hover {
+    color: #174c3c;
 }
 
 /* =========================
@@ -1382,7 +1408,6 @@ background: #ffffff;
 
     .ulip-links {
         overflow-x: auto;
-        flex: 1;
         gap: 20px;
         scroll-behavior: smooth;
         scrollbar-width: none;
@@ -1391,12 +1416,7 @@ background: #ffffff;
     .ulip-links::-webkit-scrollbar {
         display: none;
     }
-
-    .nav-arrow {
-        display: block;
-    }
 }
-
 /* =========================
    CONTENT SECTION DESIGN
 ========================= */
@@ -1640,6 +1660,4 @@ html {
         font-size: 16px;
     }
 
-
 }
-
