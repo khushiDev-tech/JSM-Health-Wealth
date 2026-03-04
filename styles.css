@@ -536,16 +536,117 @@ body {
     line-height:1.8;
 }
 
-/* Responsive */
-@media(max-width:768px){
-    .faq-title{
-        font-size:26px;
-    }
-    .accordion-button{
-        font-size:16px;
+/* ==========================
+   LARGE SCREEN (1400px+)
+========================== */
+
+@media (min-width:1400px){
+    .faq-section{
+        padding:100px 0;
     }
 }
 
+
+/* ==========================
+   TABLET (992px - 1199px)
+========================== */
+
+@media (max-width:1199px){
+
+    .faq-title{
+        font-size:30px;
+    }
+
+    .accordion-button{
+        font-size:17px;
+    }
+}
+
+
+/* ==========================
+   SMALL TABLET (768px - 991px)
+========================== */
+
+@media (max-width:991px){
+
+    .faq-section{
+        padding:60px 0;
+    }
+
+    .faq-title{
+        font-size:26px;
+    }
+
+    .accordion-button{
+        font-size:16px;
+        padding:18px 60px 18px 20px;
+    }
+
+    .accordion-button .icon-boxs{
+        width:55px;
+    }
+}
+
+
+/* ==========================
+   MOBILE (Below 768px)
+========================== */
+
+@media (max-width:768px){
+
+    .faq-section{
+        padding:50px 15px;
+    }
+
+    .faq-title{
+        font-size:24px;
+    }
+
+    .accordion-item{
+        margin-bottom:15px;
+    }
+
+    .accordion-button{
+        font-size:15px;
+        padding:16px 55px 16px 15px;
+    }
+
+    .accordion-button .icon-boxs{
+        width:50px;
+        font-size:16px;
+    }
+
+    .accordion-body{
+        font-size:14px;
+        padding:18px 15px;
+    }
+}
+
+
+/* ==========================
+   SMALL MOBILE (480px)
+========================== */
+
+@media (max-width:480px){
+
+    .faq-title{
+        font-size:20px;
+    }
+
+    .accordion-button{
+        font-size:14px;
+        padding:14px 50px 14px 12px;
+    }
+
+    .accordion-button .icon-boxs{
+        width:45px;
+        font-size:14px;
+    }
+
+    .accordion-body{
+        font-size:13px;
+    }
+}
 
 
  .sip-section-2 {
@@ -1677,3 +1778,4 @@ html {
 
 
 }
+
