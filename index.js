@@ -1,57 +1,45 @@
 const slides = [
   {
     title: 'Secure Your Financial Future with <span>JSM</span>',
-    subtitle: 'Your trusted partner in wealth, health, and insurance solutions',
-    desc: 'Personalized solutions that help you achieve your goals',
-    image: 'health-insurance.jpg'
+    image: 'images/health-insurance.jpg'
   },
   {
-    title: 'Your trusted partner in wealth, health, and ',
-    subtitle: 'Complete life, health, and vehicle insurance plans',
-    desc: 'Smart protection for you and your family',
-    image: 'slide-1.avif'
+    title: 'Your Trusted Partner in <span>Insurance Solutions</span>',
+    image: 'images/slide-1.avif'
   },
   {
-    title: 'Personalized Solutions which helps you achieve your <span>Goals</span>',
-    subtitle: 'Investment planning made simple and secure',
-    desc: 'Build a strong financial future with expert guidance',
-    image: 'slide-2.avif'
+    title: 'Personalized Solutions to Achieve Your <span>Goals</span>',
+    image: 'images/slide-2.avif'
   }
 ];
 
 let index = 0;
 
-// ✅ FIX: hero element select
 const hero = document.querySelector('.hero-section');
-
 const titleEl = document.getElementById('hero-title');
-const subtitleEl = document.getElementById('hero-subtitle');
-const descEl = document.getElementById('hero-desc');
 
-// initial load
+// Initial Load
 hero.style.backgroundImage = `url(${slides[0].image})`;
+titleEl.innerHTML = slides[0].title;
 
 function changeSlide() {
   index = (index + 1) % slides.length;
 
-  // fade out
+  // Fade out
   titleEl.style.opacity = 0;
-  subtitleEl.style.opacity = 0;
-  descEl.style.opacity = 0;
+  hero.style.opacity = 0.8;
 
   setTimeout(() => {
-    // change image
+    // Change Image
     hero.style.backgroundImage = `url(${slides[index].image})`;
 
-    // change text
+    // Change Heading
     titleEl.innerHTML = slides[index].title;
-    subtitleEl.innerText = slides[index].subtitle;
-    descEl.innerText = slides[index].desc;
 
-    // fade in
+    // Fade in
     titleEl.style.opacity = 1;
-    subtitleEl.style.opacity = 1;
-    descEl.style.opacity = 1;
+    hero.style.opacity = 1;
+
   }, 400);
 }
 
@@ -63,6 +51,7 @@ const navLinks = document.getElementById("navLinks");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
 
 
 
