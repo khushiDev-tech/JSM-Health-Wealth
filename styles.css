@@ -1416,7 +1416,22 @@ body {
     .ulip-links::-webkit-scrollbar {
         display: none;
     }
+      
+
+    .ulip-nav-section {
+        top: 70px;
+    }
 }
+
+
+
+/* Mobile */
+@media (max-width: 576px) {
+    .ulip-nav-section {
+        top: 60px;
+    }
+}
+
 /* =========================
    CONTENT SECTION DESIGN
 ========================= */
@@ -1659,5 +1674,6 @@ html {
     .cta-card p {
         font-size: 16px;
     }
+
 
 }
