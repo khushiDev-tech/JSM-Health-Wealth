@@ -1,15 +1,15 @@
 const slides = [
   {
     title: 'Secure Your Financial Future with <span>JSM</span>',
-    image: 'images/health-insurance.jpg'
+    image: 'health-insurance.jpg'
   },
   {
     title: 'Your Trusted Partner in <span>Insurance Solutions</span>',
-    image: 'images/slide-1.avif'
+    image: 'slide-1.avif'
   },
   {
     title: 'Personalized Solutions to Achieve Your <span>Goals</span>',
-    image: 'images/slide-2.avif'
+    image: 'slide-2.avif'
   }
 ];
 
@@ -51,6 +51,7 @@ const navLinks = document.getElementById("navLinks");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
 
 
 
