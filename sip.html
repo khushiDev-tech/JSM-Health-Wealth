@@ -1113,10 +1113,18 @@
         </p>
 
         <form class="sip-form">
-          <input type="text" placeholder="Your Name" required />
+          <input type="text" placeholder="Full Name" required />
           <input type="tel" placeholder="Mobile Number" required />
           <input type="email" placeholder="Email Address" required />
-          <input type="text" placeholder="Monthly Investment Budget" required />
+         <input 
+    type="text" 
+    placeholder="Monthly Investment Budget"
+    required
+    maxlength="5"
+    inputmode="numeric"
+    pattern="[0-9]{1,5}"
+    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,5)"
+/>
 
           <select required>
             <option value="" disabled selected>Select Your Goal</option>
@@ -1311,3 +1319,4 @@
     <script src="index.js"></script>
   </body>
 </html>
+
