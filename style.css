@@ -1609,6 +1609,10 @@ textarea.form-control{
   transition: 0.3s;
 }
 
+    .anchor{
+      color: #fff;
+      text-decoration: none;
+    }
 .footer-links li i {
   margin-right: 14px;
   font-size: 15px;
@@ -1811,4 +1815,5 @@ textarea.form-control{
   }
 
 }
+
 
