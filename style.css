@@ -75,19 +75,29 @@ overflow-x: hidden;
 .top-bar a:hover {
   color: #ff494a;
 }
-.social-icons {
+.social-icoons {
   display: flex;
   align-items: center;
 }
 
-.social-icons i {
+.social-icoons i {
   margin-left: 12px;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
-.social-icons i:hover {
-  color: #0B6A68;
+.social-icoons i:hover {
+  color: #b2cecd;
+}
+
+@media (max-width: 767px) {
+  .social-icoons {
+    margin-top: 5px;
+  }
+
+  .social-icoons i {
+    margin: 0 8px;
+  }
 }
 
 /* =========================
@@ -1815,6 +1825,7 @@ textarea.form-control{
   }
 
 }
+
 
 
 
