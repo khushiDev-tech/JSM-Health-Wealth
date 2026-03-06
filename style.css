@@ -130,7 +130,7 @@ overflow-x: hidden;
 }
 
 .logo img {
-  max-height: 55px;
+  max-height: 75px;
   width: auto;
   object-fit: contain;
 }
@@ -445,7 +445,7 @@ overflow-x: hidden;
 
   /* Logo */
   .logo img {
-    max-height: 45px;
+    max-height: 60px;
   }
 
   /* Navigation links stack */
@@ -1825,6 +1825,7 @@ textarea.form-control{
   }
 
 }
+
 
 
 
