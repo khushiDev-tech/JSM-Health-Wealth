@@ -1234,188 +1234,105 @@ body {
    SECTION BACKGROUND
 =========================== */
 
-.compare-section{
-    font-family: "Open Sans", sans-serif;
-    padding:60px 15px;
+ /* Section */
+.policy-section{
+    background:#eef3ef;
+    padding:60px 20px;
 }
 
-/* HEADING */
-.compare-heading{
+/* Title */
+.policy-title{
     text-align:center;
-    font-size:35px;
-    font-weight:600;
-    margin-bottom:40px;
-    color:#174c3c;
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:30px;
 }
 
-/* ===========================
-   TABLE WRAPPER
-=========================== */
-
-.compare-wrapper{
-    width:100%;
-    border-radius:15px;
-    overflow:hidden; /* remove forced scroll */
-    box-shadow:0 12px 35px rgba(0,0,0,0.15);
+/* Card */
+.policy-card{
     background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    max-width:900px;
+    margin:auto;
 }
 
-/* ===========================
-   TABLE STRUCTURE
-=========================== */
+/* Row */
+.policy-row{
+    display:flex;
+    border-bottom:1px solid #e5e5e5;
+}
 
-.compare-table{
+.policy-row:last-child{
+    border-bottom:none;
+}
+
+/* Label */
+.policy-label{
+    width:40%;
+    padding:18px 25px;
+    background:#f7f7f7;
+    font-weight:600;
+}
+
+/* Value */
+.policy-value{
+    width:60%;
+    padding:18px 25px;
+    color:#555;
+}
+
+/* Tablet Responsive */
+@media (max-width: 992px){
+
+.policy-title{
+    font-size:30px;
+}
+
+.policy-label,
+.policy-value{
+    padding:16px 20px;
+}
+
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px){
+
+.policy-row{
+    flex-direction:column;
+}
+
+.policy-label{
     width:100%;
-    border-collapse:collapse;
-    table-layout:fixed;   /* 🔥 makes table fit screen */
+    border-bottom:1px solid #e5e5e5;
 }
 
-/* HEADER */
-.compare-table thead{
-    background:#4f79a7;
-    color:#fff;
-    text-align:center;
-}
-
-.compare-table thead th{
-    padding:18px;
-    font-size:20px;
-    font-weight:600;
-}
-
-/* BODY */
-.compare-table tbody tr{
-    background:#e9edf3;
-    border-bottom:1px solid #d0d7e2;
-    transition:0.3s ease;
-}
-
-.compare-table tbody tr:hover{
-    background:#dde5f1;
-}
-
-.compare-table tbody td{
-    padding:16px;
-    font-size:16px;
-    vertical-align:middle;
-    text-align:center;
-    word-wrap:break-word;
-}
-
-/* Left column bold */
-.compare-table tbody td:first-child{
-    font-weight:600;
-    text-align:center;
+.policy-value{
     width:100%;
 }
 
-/* Highlight Boxes */
-.sa-wealth,
-.sa-future{
-    padding:8px;
-    margin-bottom:6px;
-    font-weight:600;
-    border-radius:6px;
 }
 
-.sa-wealth{
-    background:#f4b9bd;
+/* Small Mobile */
+@media (max-width:480px){
+
+.policy-section{
+    padding:40px 15px;
 }
 
-.sa-future{
-    background:#9ec3df;
+.policy-title{
+    font-size:24px;
 }
 
-/* ===========================
-   TABLET (771px range FIX)
-=========================== */
-
-@media (max-width:992px){
-
-    .compare-heading{
-        font-size:26px;
-    }
-
-    .compare-table thead th{
-        font-size:15px;
-        padding:12px;
-    }
-
-    .compare-table tbody td{
-        font-size:14px;
-        padding:12px;
-    }
+.policy-label,
+.policy-value{
+    padding:14px 16px;
+    font-size:14px;
 }
 
-/* ===========================
-   MOBILE (Card Layout)
-=========================== */
-
-@media (max-width:768px){
-
-    .compare-table thead{
-        display:none;
-    }
-
-    .compare-table,
-    .compare-table tbody,
-    .compare-table tr,
-    .compare-table td{
-        display:block;
-        width:100%;
-    }
-
-    .compare-table tr{
-        margin-bottom:20px;
-        background:#f5f7fb;
-        border-radius:12px;
-        padding:12px;
-        box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    }
-
-    .compare-table tbody td{
-        text-align:left;
-        padding:10px;
-        font-size:14px;
-        border:none;
-    }
-
-    .compare-table tbody td:first-child{
-        font-weight:700;
-        text-align: center;
-        margin-bottom:8px;
-    }
-
-    .compare-table td::before{
-        content: attr(data-label);
-        font-weight:600;
-        display:block;
-        margin-bottom:4px;
-        color:#174c3c;
-        font-size:13px;
-    }
 }
-
-/* ===========================
-   SMALL MOBILE
-=========================== */
-
-@media(max-width:480px){
-
-    .compare-section{
-        padding:40px 10px;
-    }
-
-    .compare-heading{
-        font-size:22px;
-    }
-
-    .compare-table tbody td{
-       text-align: center;
-        font-size:13px;
-    }
-}
-
 /* =========================
    ULIP WRAPPER
 ========================= */
@@ -1780,5 +1697,6 @@ html {
 
 
 }
+
 
 
