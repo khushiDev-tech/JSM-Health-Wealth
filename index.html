@@ -582,13 +582,12 @@
 <!-- Full Name -->
 <div class="col-md-6">
     <div class="input-group">
-        <input 
-            type="text" 
-            class="form-control" 
-            placeholder="Full Name*" 
-            pattern="[A-Za-z\s]+" 
-            title="Only letters allowed"
-            required>
+       <input 
+type="text"
+class="form-control"
+placeholder="Full Name*"
+oninput="this.value=this.value.replace(/[^A-Za-z\s]/g,'')"
+required>
         <span class="input-group-text">
             <i class="fa fa-person"></i>
         </span>
@@ -849,6 +848,7 @@
   
 
   
+
 
 
 
