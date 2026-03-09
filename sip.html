@@ -1358,8 +1358,56 @@
 
     <!-- Owl Carousel Init -->
     <script src="index.js"></script>
+     <script>
+      const links = document.querySelectorAll("#ulipNavLinks a");
+const scrollLeftBtn = document.getElementById("scrollLeft");
+const scrollRightBtn = document.getElementById("scrollRight");
+
+let currentIndex = 0;
+
+function activateSection(index){
+
+  links.forEach(link => link.classList.remove("active"));
+
+  links[index].classList.add("active");
+
+  const targetId = links[index].getAttribute("href");
+  const section = document.querySelector(targetId);
+
+  section.scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
+
+}
+
+scrollRightBtn.addEventListener("click", () => {
+
+  currentIndex++;
+
+  if(currentIndex >= links.length){
+    currentIndex = 0;   // loop
+  }
+
+  activateSection(currentIndex);
+
+});
+
+scrollLeftBtn.addEventListener("click", () => {
+
+  currentIndex--;
+
+  if(currentIndex < 0){
+    currentIndex = links.length - 1; // loop
+  }
+
+  activateSection(currentIndex);
+
+});
+    </script>
   </body>
 </html>
+
 
 
 
