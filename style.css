@@ -1614,7 +1614,7 @@ font-size:18px;
 color:#d1d5db;
 display:flex;
 align-items:center;
-gap:10px;
+/* gap:10px; */
 cursor:pointer;
 transition:.3s;
 }
@@ -1639,6 +1639,10 @@ gap:10px;
 
 .footer-links a:hover{
 color:#ffffff;
+}
+
+.footers-links{
+    margin-right: 30px;
 }
 
 /* Social Icons */
@@ -1735,6 +1739,7 @@ height:48px;
 font-size:18px;
 }
 
+
 }
 
 /* ================= MOBILE ================= */
@@ -1828,3 +1833,4 @@ margin-left:0;
 }
 
 }
+
