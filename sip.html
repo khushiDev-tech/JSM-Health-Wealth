@@ -1103,31 +1103,57 @@
         <p class="sip-subtitle">
           Let us calculate your personalized SMART SIP 360 plan.
         </p>
+<form class="sip-form">
 
-        <form class="sip-form">
-          <input type="text" placeholder="Full Name" required />
-          <input type="tel" placeholder="Mobile Number" required />
-          <input type="email" placeholder="Email Address" required />
-         <input 
-    type="text" 
-    placeholder="Monthly Investment Budget"
-    required
-    maxlength="5"
-    inputmode="numeric"
-    pattern="[0-9]{1,5}"
-    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,5)"
+<!-- Full Name -->
+<input 
+type="text"
+placeholder="Full Name"
+required
+oninput="this.value=this.value.replace(/[^A-Za-z\s]/g,'')"
 />
 
-          <select required>
-            <option value="" disabled selected>Select Your Goal</option>
-            <option>Retirement Planning</option>
-            <option>Child Education</option>
-            <option>Wealth Creation</option>
-            <option>Home Purchase</option>
-          </select>
+<!-- Mobile Number -->
+<input 
+type="text"
+placeholder="Mobile Number"
+required
+maxlength="10"
+inputmode="numeric"
+oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10)"
+/>
 
-          <button type="submit">GET MY CUSTOM PLAN NOW</button>
-        </form>
+<!-- Email -->
+<input 
+type="email"
+placeholder="Email Address"
+required
+/>
+
+<!-- Monthly Investment -->
+<input 
+type="text"
+placeholder="Monthly Investment Budget"
+required
+maxlength="5"
+inputmode="numeric"
+oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,5)"
+/>
+
+<!-- Goal -->
+<select required>
+<option value="" disabled selected>Select Your Goal</option>
+<option>Retirement Planning</option>
+<option>Child Education</option>
+<option>Wealth Creation</option>
+<option>Home Purchase</option>
+</select>
+
+<button type="submit">
+GET MY CUSTOM PLAN NOW
+</button>
+
+</form>
 
         <p class="sip-contact">
           Or Call / WhatsApp: <strong>+91-9406960918</strong>
@@ -1407,6 +1433,7 @@ scrollLeftBtn.addEventListener("click", () => {
     </script>
   </body>
 </html>
+
 
 
 
