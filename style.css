@@ -1614,7 +1614,7 @@ font-size:18px;
 color:#d1d5db;
 display:flex;
 align-items:center;
-/* gap:10px; */
+ gap:10px; 
 cursor:pointer;
 transition:.3s;
 }
@@ -1833,4 +1833,5 @@ margin-left:0;
 }
 
 }
+
 
