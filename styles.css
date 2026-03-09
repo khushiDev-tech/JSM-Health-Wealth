@@ -1333,39 +1333,44 @@ body {
 }
 
 }
+
 /* =========================
    ULIP WRAPPER
 ========================= */
 
-
-/* =========================
-   NAVIGATION
-========================= */
 .ulip{
   font-family: "Open Sans", sans-serif;
   position: relative;
 }
 
-/* Sticky Nav */
+/* =========================
+   STICKY NAV
+========================= */
+
 .ulip-nav-section{
   position: sticky;
-  top: 90px;   /* desktop navbar height */
+  top: 80px;   /* header height */
   z-index: 999;
   background:#fff;
   width:100%;
+  border-bottom:1px solid #eee;
 }
 
-/* Wrapper */
+/* Nav Wrapper */
 .ulip-nav-wrapper{
   display:flex;
   align-items:center;
+  gap:5px;
   padding:10px 0;
 }
 
-/* Links container */
+/* =========================
+   LINKS
+========================= */
+
 .ulip-links{
   display:flex;
-  gap:22px;
+  gap:18px;
   overflow-x:auto;
   scroll-behavior:smooth;
   flex:1;
@@ -1373,24 +1378,27 @@ body {
 }
 
 /* Hide scrollbar */
+
 .ulip-links::-webkit-scrollbar{
   display:none;
 }
+
 .ulip-links{
   scrollbar-width:none;
 }
 
-/* Links */
+/* Nav Links */
+
 .ulip-links a{
   flex:0 0 auto;
-  padding:10px 16px;
+  padding:10px 14px;
   text-decoration:none;
   color:#333;
-  font-size:18px;
+  font-size:17px;
   font-weight:500;
   border-bottom:2px solid transparent;
-  transition:0.3s;
   white-space:nowrap;
+  transition:.3s;
 }
 
 .ulip-links a:hover{
@@ -1403,7 +1411,10 @@ body {
   border-bottom:2px solid #174c3c;
 }
 
-/* Arrows */
+/* =========================
+   ARROWS
+========================= */
+
 .nav-arrow{
   font-size:20px;
   cursor:pointer;
@@ -1428,20 +1439,13 @@ body {
   }
 
   .ulip-links{
-    gap:16px;
+    gap:14px;
   }
 
   .ulip-links a{
-    font-size:16px;
-    padding:8px 14px;
+    font-size:15px;
+    padding:8px 12px;
   }
-
-}
-@media (max-width:768px){
-
-.ulip-nav-section{
-  top:65px;   /* mobile navbar height */
-}
 
 }
 
@@ -1449,25 +1453,41 @@ body {
    MOBILE
 ========================= */
 
-@media (max-width:576px){
+@media (max-width:768px){
 
   .ulip-nav-section{
-    top:60px;
+    top:65px;
+  }
+
+  .ulip-nav-wrapper{
+padding: 25px 8px 0px 0px;
   }
 
   .ulip-links{
-    gap:12px;
-    padding:0 8px;
+    gap:10px;
+    padding:0 6px;
   }
 
   .ulip-links a{
     font-size:14px;
-    padding:8px 12px;
+    padding:7px 10px;
   }
 
   .nav-arrow{
     font-size:18px;
-    padding:5px 10px;
+    padding:5px 8px;
+  }
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width:480px){
+
+  .ulip-nav-section{
+    top:60px;
   }
 
 }
@@ -1619,11 +1639,11 @@ body {
 }
 
 html {
-    scroll-padding-top: 100px;   /* adjust if navbar height different */
+    scroll-padding-top: 120px;   /* adjust if navbar height different */
 }
 
 .content-section {
-    scroll-margin-top: 100px;   /* ensures heading visible after click */
+    scroll-margin-top: 120px;   /* ensures heading visible after click */
 }
 
 /* =========================
@@ -1778,6 +1798,7 @@ Mobile
 }
 
 }
+
 
 
 
