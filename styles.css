@@ -1345,55 +1345,61 @@ body {
 /* =========================
    NAVIGATION
 ========================= */
-
-.ulip {
-   
-    font-family: "Open Sans", sans-serif;
-    position: relative;
+.ulip{
+  font-family: "Open Sans", sans-serif;
+  position: relative;
 }
 
-.ulip-nav-section {
-    position: sticky;
-    top: 90px;
-    z-index: 998;
-    background: #ffffff;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+/* Sticky Nav */
+.ulip-nav-section{
+  position: sticky;
+  top: 90px;
+  z-index: 998;
+  background:#fff;
+  box-shadow:0 4px 15px rgba(0,0,0,0.06);
 }
 
-.ulip-nav-wrapper {
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden; /* important */
-    padding: 15px 0;
+/* Wrapper */
+.ulip-nav-wrapper{
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  padding:12px 0;
 }
 
-/* Links Container */
-.ulip-links {
-    display: flex;
-    gap: 30px;
-    white-space: nowrap;
-    overflow-x: auto;   /* 🔥 allow scroll */
-    scroll-behavior: smooth;
-    flex: 1;
+/* Links container */
+.ulip-links{
+  display:flex;
+  gap:25px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  white-space:nowrap;
+  flex:1;
+  padding:0 10px;
 }
 
-/* Hide Scrollbar */
-.ulip-links::-webkit-scrollbar {
-    display: none;
+/* Hide scrollbar */
+.ulip-links::-webkit-scrollbar{
+  display:none;
 }
-.ulip-links {
-    scrollbar-width: none;
+.ulip-links{
+  scrollbar-width:none;
 }
 
-/* Each link fixed width so 6 visible */
+/* Links */
 .ulip-links a{
+  flex:0 0 auto;
   padding:10px 18px;
-  display:inline-block;
   text-decoration:none;
   color:#333;
-  font-size: 20px;
-  white-space:nowrap;
+  font-size:18px;
+  font-weight:500;
+  border-bottom:2px solid transparent;
+  transition:all .3s ease;
+}
+
+.ulip-links a:hover{
+  color:#174c3c;
 }
 
 .ulip-links a.active{
@@ -1402,55 +1408,52 @@ body {
   border-bottom:2px solid #174c3c;
 }
 
-/* Arrows */
-.nav-arrow {
-    font-size: 22px;
-    cursor: pointer;
-    padding: 8px 15px;
-    color: #333;
-    transition: 0.3s;
-    flex-shrink: 0;
-}
+/* =========================
+   TABLET
+========================= */
 
-.nav-arrow:hover {
-    color: #174c3c;
+@media (max-width:991px){
+
+  .ulip-nav-section{
+    top:70px;
+  }
+
+  .ulip-links{
+    gap:18px;
+  }
+
+  .ulip-links a{
+    font-size:16px;
+    padding:8px 14px;
+  }
+
 }
 
 /* =========================
-   RESPONSIVE
+   MOBILE
 ========================= */
 
-@media (max-width: 991px) {
+@media (max-width:576px){
 
-    .ulip-nav-wrapper {
-        justify-content: space-between;
-    }
+  .ulip-nav-section{
+    top:60px;
+  }
 
-    .ulip-links {
-        overflow-x: auto;
-        gap: 20px;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-    }
+  .ulip-links{
+    gap:12px;
+    padding:0 8px;
+  }
 
-    .ulip-links::-webkit-scrollbar {
-        display: none;
-    }
-      
+  .ulip-links a{
+    font-size:14px;
+    padding:8px 12px;
+  }
 
-    .ulip-nav-section {
-        top: 70px;
-    }
 }
 
 
 
-/* Mobile */
-@media (max-width: 576px) {
-    .ulip-nav-section {
-        top: 60px;
-    }
-}
+
 
 /* =========================
    CONTENT SECTION DESIGN
@@ -1697,6 +1700,7 @@ html {
 
 
 }
+
 
 
 
