@@ -1349,7 +1349,7 @@ body {
 
 .ulip-nav-section{
   position: sticky;
-  top: 80px;   /* header height */
+  top: 100px;   /* header height */
   z-index: 999;
   background:#fff;
   width:100%;
@@ -1798,6 +1798,7 @@ Mobile
 }
 
 }
+
 
 
 
