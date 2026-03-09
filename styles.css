@@ -1454,6 +1454,56 @@ body {
 
 
 
+/* Arrows */
+.nav-arrow {
+    font-size: 22px;
+    cursor: pointer;
+    padding: 8px 15px;
+    color: #333;
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+
+.nav-arrow:hover {
+    color: #174c3c;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .ulip-nav-wrapper {
+        justify-content: space-between;
+    }
+
+    .ulip-links {
+        overflow-x: auto;
+        gap: 20px;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    }
+
+    .ulip-links::-webkit-scrollbar {
+        display: none;
+    }
+
+   
+
+    .ulip-nav-section {
+        top: 70px;
+    }
+}
+
+
+
+/* Mobile */
+@media (max-width: 576px) {
+    .ulip-nav-section {
+        top: 60px;
+    }
+}
 
 /* =========================
    CONTENT SECTION DESIGN
@@ -1700,6 +1750,7 @@ html {
 
 
 }
+
 
 
 
