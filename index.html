@@ -575,58 +575,79 @@
 
             <h2 class="quote-title mb-4">Request a Quote</h2>
 
-            <form>
-                <div class="row g-4">
+          <form>
 
-                    <div class="col-md-6">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Full Name*" required>
-                            <span class="input-group-text">
-                                <i class="fa fa-person"></i>
-                            </span>
-                        </div>
-                    </div>
+<div class="row g-4">
 
-                    <div class="col-md-6">
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Email Address*" required>
-                            <span class="input-group-text">
-                                <i class="fa fa-envelope"></i>
-                            </span>
-                        </div>
-                    </div>
+<!-- Full Name -->
+<div class="col-md-6">
+    <div class="input-group">
+        <input 
+            type="text" 
+            class="form-control" 
+            placeholder="Full Name*" 
+            pattern="[A-Za-z\s]+" 
+            title="Only letters allowed"
+            required>
+        <span class="input-group-text">
+            <i class="fa fa-person"></i>
+        </span>
+    </div>
+</div>
 
-                    <div class="col-md-6">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Phone Number*" required>
-                            <span class="input-group-text">
-                                <i class="fa fa-phone"></i>
-                            </span>
-                        </div>
-                    </div>
+<!-- Email -->
+<div class="col-md-6">
+    <div class="input-group">
+        <input type="email" class="form-control" placeholder="Email Address*" required>
+        <span class="input-group-text">
+            <i class="fa fa-envelope"></i>
+        </span>
+    </div>
+</div>
 
-                    <div class="col-md-6">
-                        <select class="form-select" required>
-                            <option selected disabled>--Choose a Service--</option>
-                            <option>Health Insurance</option>
-                            <option>Life Insurance</option>
-                            <option>Investment Planning</option>
-                            <option>Mutual Funds</option>
-                        </select>
-                    </div>
+<!-- Mobile Number -->
+<div class="col-md-6">
+    <div class="input-group">
+        <input 
+            type="tel" 
+            class="form-control" 
+            placeholder="Mobile Number*" 
+            pattern="[0-9]{10}" 
+            maxlength="10"
+            title="Enter 10 digit mobile number"
+            required>
+        <span class="input-group-text">
+            <i class="fa fa-phone"></i>
+        </span>
+    </div>
+</div>
 
-                    <div class="col-12">
-                        <textarea class="form-control" rows="4" placeholder="Message*" required></textarea>
-                    </div>
+<!-- Service -->
+<div class="col-md-6">
+    <select class="form-select" required>
+        <option selected disabled>--Choose a Service--</option>
+        <option>Health Insurance</option>
+        <option>Life Insurance</option>
+        <option>Investment Planning</option>
+        <option>Mutual Funds</option>
+    </select>
+</div>
 
-                    <div class="col-12">
-                        <button type="submit" class="send-btn w-100">
-                            SEND MESSAGE <i class="fa fa-arrow-right ms-2"></i>
-                        </button>
-                    </div>
+<!-- Message -->
+<div class="col-12">
+    <textarea class="form-control" rows="4" placeholder="Message*" required></textarea>
+</div>
 
-                </div>
-            </form>
+<!-- Button -->
+<div class="col-12">
+    <button type="submit" class="send-btn w-100">
+        SEND MESSAGE <i class="fa fa-arrow-right ms-2"></i>
+    </button>
+</div>
+
+</div>
+
+</form>
 
         </div>
 
@@ -828,6 +849,7 @@
   
 
   
+
 
 
 
