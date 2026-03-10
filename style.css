@@ -30,7 +30,7 @@ overflow-x: hidden;
   background: #fff;
 }
 
-.container {
+.containers {
   max-width: 1170px;
   margin: auto;
   padding: 0 20px;
@@ -1904,6 +1904,7 @@ margin-left:0;
 }
 
 }
+
 
 
 
