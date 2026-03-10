@@ -1535,8 +1535,8 @@ padding: 36px 8px 0px 0px;
 
 /* Paragraph left aligned */
 .content-section p {
-    font-size: 17px;
-    line-height: 1.8;
+   font-size: 16px;
+    line-height: 1.4;
     color: #555;
 }
 
@@ -1798,6 +1798,7 @@ Mobile
 }
 
 }
+
 
 
 
