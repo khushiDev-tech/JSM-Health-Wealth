@@ -1239,7 +1239,14 @@ required
 oninput="this.value=this.value.replace(/[^A-Za-z\s]/g,'')"
 />
 
-<!-- Mobile Number -->
+<!-- Email -->
+<input 
+type="email"
+placeholder="Email Address"
+required
+/>
+
+  <!-- Mobile Number -->
 <input 
 type="text"
 placeholder="Mobile Number"
@@ -1247,13 +1254,6 @@ required
 maxlength="10"
 inputmode="numeric"
 oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10)"
-/>
-
-<!-- Email -->
-<input 
-type="email"
-placeholder="Email Address"
-required
 />
 
 <!-- Monthly Investment -->
@@ -1558,6 +1558,7 @@ scrollLeftBtn.addEventListener("click", () => {
     </script>
   </body>
 </html>
+
 
 
 
