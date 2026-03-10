@@ -4,7 +4,7 @@ const slides = [
     image: 'health-insurance.jpg'
   },
   {
-    title: 'Your Trusted Partner in <span>Insurance Solutions</span>',
+    title: 'Your Trusted Partner in Insurance<span> Solutions</span>',
     image: 'slide-1.avif'
   },
   {
@@ -51,6 +51,7 @@ const navLinks = document.getElementById("navLinks");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
 
 
 
