@@ -638,12 +638,11 @@ What JSM Wealth, Health, & Insurance Means
 <div class="col-md-6">
     <div class="input-group">
         <input 
-        type="email" 
-        class="form-control" 
-        placeholder="Email Address*" 
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-        title="Enter valid email address"
-        required>
+type="email"
+class="form-control"
+placeholder="Email Address*"
+oninput="this.value=this.value.replace(/[^a-zA-Z0-9@._-]/g,'')"
+required>
         <span class="input-group-text">
             <i class="fa fa-envelope"></i>
         </span>
@@ -654,14 +653,14 @@ What JSM Wealth, Health, & Insurance Means
 <div class="col-md-6">
     <div class="input-group">
         <input 
-            type="tel" 
-            class="form-control" 
-            placeholder="Mobile Number*" 
-            pattern="[0-9]{10}"
-            maxlength="10"
-            oninput="this.value=this.value.replace(/[^0-9]/g,'')"
-            title="Enter 10 digit mobile number"
-            required>
+type="tel" 
+class="form-control" 
+placeholder="Mobile Number*" 
+maxlength="10"
+pattern="[0-9]{10}"
+oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+title="Enter 10 digit mobile number"
+required>
         <span class="input-group-text">
             <i class="fa fa-phone"></i>
         </span>
@@ -889,6 +888,7 @@ What JSM Wealth, Health, & Insurance Means
   
 
   
+
 
 
 
