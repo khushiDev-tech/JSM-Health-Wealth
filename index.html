@@ -642,6 +642,8 @@ type="email"
 class="form-control"
 placeholder="Email Address*"
 oninput="this.value=this.value.replace(/[^a-zA-Z0-9@._-]/g,'')"
+pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+title="Enter a valid email address"
 required>
         <span class="input-group-text">
             <i class="fa fa-envelope"></i>
@@ -888,6 +890,7 @@ required>
   
 
   
+
 
 
 
