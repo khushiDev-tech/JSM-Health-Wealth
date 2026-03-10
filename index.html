@@ -637,11 +637,12 @@ What JSM Wealth, Health, & Insurance Means
 <!-- Email -->
 <div class="col-md-6">
     <div class="input-group">
-        <input 
+      <input 
 type="email"
 class="form-control"
 placeholder="Email Address*"
-title="Enter a valid email address"
+pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+oninput="this.value=this.value.replace(/[^a-zA-Z0-9@._-]/g,'')"
 required>
         <span class="input-group-text">
             <i class="fa fa-envelope"></i>
@@ -888,6 +889,7 @@ required>
   
 
   
+
 
 
 
